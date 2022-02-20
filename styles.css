@@ -71,7 +71,7 @@ body {
   position: absolute;
   width: 100%;
   line-height: 5rem;
-  bottom: 0;
+  top: 60%;
   background-color: var(--white-bg);
   opacity: 0.8;
 }
