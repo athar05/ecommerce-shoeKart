@@ -1,12 +1,3 @@
-body {
-  background-color: white;
-}
-
-.nav {
-  border: none;
-  border-bottom: 1px solid var(--primary);
-}
-
 .nav-right > figure {
   padding: 0 0;
 }
