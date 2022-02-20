@@ -1,3 +1,116 @@
+
+.nav-right > figure {
+  padding: 0 0;
+}
+
+.icon {
+  width: 2.5rem;
+}
+/* start product listing page */
+
+/* filter section start */
+.filter-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.filter-heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filter-section.filter-heading:hover {
+  cursor: pointer;
+}
+
+.filter-section {
+  border-bottom: 1px solid var(--primary);
+}
+
+.filter-pricing input {
+  width: 80%;
+}
+
+.filter-categories .checkbox-list > li {
+  padding: 0.25rem 0;
+}
+
+.checked {
+  color: orange;
+}
+
+.filter-section.filter-rating > span:hover {
+  cursor: pointer;
+}
+/* filter section end */
+
+/* product-listing begins */
+.content-container {
+  display: grid;
+  padding: 1rem;
+}
+
+.content-container.col-4-layout {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0.25rem;
+  grid-template-areas: "col-1-4 col-3-4 col-3-4 col-3-4";
+}
+.col-4-layout .col-1-4 {
+  grid-area: col-1-4;
+}
+.col-4-layout .col-3-4 {
+  grid-area: col-3-4;
+}
+
+/* flex for products grid */
+.products-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.products-grid .product {
+  margin: 0.3rem 0rem;
+  background-color: var(--gray-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+  border-radius: 0.2rem;
+}
+
+.product .product-name {
+  top: auto;
+  bottom: auto;
+}
+
+.card {
+  width: 200px;
+}
+
+/* start header  */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.button.button-icon.button-header {
+  display: flex;
+  align-items: center;
+  min-width: 5rem;
+}
+/* end header  */
+
+/* end-product-listing-page */
+
 :root {
   --text-white: white;
   --text-black: black;

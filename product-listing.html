@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <title>shoeKart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://aquaui.netlify.app/style.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- start content listing page layout -->
+
+<body class="page-container">
+  <div class="header">
+    <div class="nav">
+
+      <div class="nav-left">
+        <img src="./images/running-shoes.png" alt="">
+
+        <input class="search-bar" type="text" placeholder="Search..">
+        <div class="button button-icon button-header"> <span> Login </span><i
+            class="fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <figure class="icon icon-cart ">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="badge-count">1</div>
+        </figure>
+
+        <figure class="icon icon-wishlist ">
+          <i class="fa-solid fa-bookmark"></i>
+          <div class="badge-count">1</div>
+        </figure>
+
+        <figure class="icon icon-notification ">
+          <i class="fa-solid fa-bell"></i>
+          <div class="badge-count">1</div>
+        </figure>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="body">
+    <div class="content-container col-4-layout">
+      <div class="col-1-4 debug ">
+        <div class="filters">
+          <div class="filter-container">
+            <div class="filter-section filter-heading">
+              <h2>FILTER</h2>
+              <p class="text-md text-primary text-underline">Clear All</p>
+            </div>
+            <div class="filter-section filter-pricing">
+              <h3>Price Range</h3>
+              <form action="">
+                <input type="range" id="vol" name="vol" min="500" max="10000"><br>
+              </form>
+            </div>
+            <div class="filter-section filter-categories">
+              <h3>Categories</h3>
+              <ul class="checkbox-list">
+                <li class="text-md text-primary"><input type="checkbox"> Men</li>
+                <li class="text-md text-primary"><input type="checkbox"> Women</li>
+                <li class="text-md text-primary"><input type="checkbox"> Kids</li>
+                <li class="text-md text-primary"><input type="checkbox"> Sale</li>
+              </ul>
+            </div>
+            <div class="filter-section filter-rating">
+              <h3>Rating</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <div class="filter-section filter-categories">
+              <h3>Sort By</h3>
+              <h4>Price</h4>
+              <ul class="checkbox-list">
+                <li class="text-md text-primary"><input type="checkbox"> High to Low</li>
+                <li class="text-md text-primary"><input type="checkbox"> Low to High</li>
+              </ul>
+              <h4>Color</h4>
+              <ul class="checkbox-list">
+                <li class="text-md text-primary"><input type="checkbox"> Black</li>
+                <li class="text-md text-primary"><input type="checkbox"> Blue</li>
+                <li class="text-md text-primary"><input type="checkbox"> Red</li>
+                <li class="text-md text-primary"><input type="checkbox"> White</li>
+                <li class="text-md text-primary"><input type="checkbox"> Green</li>
+                <li class="text-md text-primary"><input type="checkbox"> Brown</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3-4 debug debug-bg-3">
+        <div class="products">
+          <h2>PRODUCTS</h2>
+          <div class="products-grid">
+            <div class="product">
+              <div class="card">
+                <div class="card-image-with-badge">
+                  <img class="card-image" src="./images/shoe.png" alt="" />
+                  <figure>
+                    <i class="fa-solid fa-heart"></i>
+                  </figure>
+                </div>
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <button class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i>
+                      Add To Cart
+                    </button>
+                    <button class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i>Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="card">
+                <div class="card-image-with-badge">
+                  <img class="card-image" src="./images/shoe.png" alt="" />
+                  <figure>
+                    <i class="fa-solid fa-heart"></i>
+                  </figure>
+                </div>
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <button class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i>
+                      Add To Cart
+                    </button>
+                    <button class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i>Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="card">
+                <div class="card-image-with-badge">
+                  <img class="card-image" src="./images/shoe.png" alt="" />
+                  <figure>
+                    <i class="fa-solid fa-heart"></i>
+                  </figure>
+                </div>
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <button class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i>
+                      Add To Cart
+                    </button>
+                    <button class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i>Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="card">
+                <div class="card-image-with-badge">
+                  <img class="card-image" src="./images/shoe.png" alt="" />
+                  <figure>
+                    <i class="fa-solid fa-heart"></i>
+                  </figure>
+                </div>
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <button class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i>
+                      Add To Cart
+                    </button>
+                    <button class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i>Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="card">
+                <div class="card-image-with-badge">
+                  <img class="card-image" src="./images/shoe.png" alt="" />
+                  <figure>
+                    <i class="fa-solid fa-heart"></i>
+                  </figure>
+                </div>
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <button class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i>
+                      Add To Cart
+                    </button>
+                    <button class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i>Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="card">
+                <div class="card-image-with-badge">
+                  <img class="card-image" src="./images/shoe.png" alt="" />
+                  <figure>
+                    <i class="fa-solid fa-heart"></i>
+                  </figure>
+                </div>
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <button class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i>
+                      Add To Cart
+                    </button>
+                    <button class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i>Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="card">
+                <div class="card-image-with-badge">
+                  <img class="card-image" src="./images/shoe.png" alt="" />
+                  <figure>
+                    <i class="fa-solid fa-heart"></i>
+                  </figure>
+                </div>
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <button class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i>
+                      Add To Cart
+                    </button>
+                    <button class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i>Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="card">
+                <div class="card-image-with-badge">
+                  <img class="card-image" src="./images/shoe.png" alt="" />
+                  <figure>
+                    <i class="fa-solid fa-heart"></i>
+                  </figure>
+                </div>
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <button class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i>
+                      Add To Cart
+                    </button>
+                    <button class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i>Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="card">
+                <div class="card-image-with-badge">
+                  <img class="card-image" src="./images/shoe.png" alt="" />
+                  <figure>
+                    <i class="fa-solid fa-heart"></i>
+                  </figure>
+                </div>
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <button class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i>
+                      Add To Cart
+                    </button>
+                    <button class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i>Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="card">
+                <div class="card-image-with-badge">
+                  <img class="card-image" src="./images/shoe.png" alt="" />
+                  <figure>
+                    <i class="fa-solid fa-heart"></i>
+                  </figure>
+                </div>
+                <div class="card-description">
+                  <h2>Converse</h2>
+                  <p>
+                    Men High Top Shoes
+                  </p>
+                  <p>
+                    ₹1299 <strike class="card-strk">₹1599</strike>
+                  </p>
+                  <div class="card-buttons">
+                    <button class="button button-icon"> <i class="fa-solid fa-cart-shopping"></i>
+                      Add To Cart
+                    </button>
+                    <button class="button button-icon"> <i class="fa-solid fa-bag-shopping"></i>Buy Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-about-company">
+            <h3 class="h3 text-primary">shoeCart</h3>
+            <p class="text-md "> Shop exclusive coverse footwear from shoeKart. Our primary focus is designing and
+              manufacturing the highest quality footwear, specializing in skateboarding shoes, snowboarding boots,</p>
+          </div>
+          <div class="footer-quick-links">
+            <h4 class="h4">Quick Links</h4>
+            <ul class="unordered-list">
+              <a href="">
+                <li>About</li>
+              </a>
+              <a href="">
+                <li>Products</li>
+              </a>
+              <a href="">
+                <li>Contact Us</li>
+              </a>
+            </ul>
+          </div>
+          <div class="footer-contact-us">
+            <h4 class="h4">Contact Us</h4>
+            <ul class="unordered-list">
+              <li> <i class="fa-solid fa-location-check"></i>
+                Main St
+                Follansbee, West Virginia(WV), 26037</li>
+              <li><i class="fa-solid fa-phone"> </i> +23-918128345</li>
+              <li><i class="fa-solid fa-envelope"> </i> support@shoekart.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- custom scripts -->
+
+    <script src="https://kit.fontawesome.com/6f5378765c.js" crossorigin="anonymous"></script>
+</body>
+<!-- end content listing page layout -->
+
+
+</html>
