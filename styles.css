@@ -55,6 +55,7 @@ body {
   align-items: center;
   min-width: 5rem;
 }
+
 .nav-right > figure {
   padding: 0 0;
 }
@@ -252,7 +253,6 @@ h4 {
   color: var(--primary-color);
 }
 /* footer section end */
-
 
 /* wishlist section begins  */
 
@@ -494,4 +494,3 @@ h4 {
   margin: 0 0;
 }
 /* login paged ends */
-
