@@ -14,7 +14,6 @@
 
 body {
   background-color: var(--bg-white);
-
 }
 
 .page-container {
@@ -259,14 +258,18 @@ h4 {
 }
 /* footer section end */
 
-
 /* signup form begins */
 .page-container.signup {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 80px auto 200px;
   gap: 0px 0px;
-  
+  grid-template-areas:
+    "header header header header"
+    "body body body body"
+    "footer footer footer footer";
+}
+
 .page-container.signup .header {
   grid-area: header;
   width: 100%;
@@ -308,7 +311,6 @@ h4 {
 }
 /* signup form ends */
 
-  
 /* cart page begins */
 .container {
   display: grid;
