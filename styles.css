@@ -536,3 +536,58 @@ h4 {
   cursor: pointer;
 }
 /* login paged ends */
+
+/* logout page begins */
+.page-container.logout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px 70vh 200px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header header"
+    "body body body body"
+    "footer footer footer footer";
+}
+.page-container.logout .header {
+  grid-area: header;
+  width: 100%;
+}
+
+.page-container.logout .body {
+  grid-area: body;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-container.logout .logout-section {
+  font: inherit;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  width: 30%;
+  border: 1px solid var(--primary);
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.page-container.logout .footer {
+  grid-area: footer;
+  background-color: var(--footer-bg);
+  width: 100%;
+}
+
+.page-container.logout .logout-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 17vh;
+}
+
+.logout-section .text-md.text-primary.text-underline:hover {
+  cursor: pointer;
+}
+
+/* logout page ends */
