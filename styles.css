@@ -348,6 +348,38 @@ h4 {
   padding: 0 0;
   margin: 0 0;
 }
+
+.signup-section .input.signup-input-one {
+  padding: 0 0;
+  margin: 0 0;
+  position: relative;
+}
+
+#toggle-password-signup-one {
+  position: absolute;
+  top: 1.2rem;
+  right: 4rem;
+}
+.signup-section .input.signup-input-two {
+  padding: 0 0;
+  margin: 0 0;
+  position: relative;
+}
+
+#toggle-password-signup-two {
+  position: absolute;
+  top: 1.2rem;
+  right: 4rem;
+}
+
+#toggle-password-signup-one:hover {
+  cursor: pointer;
+}
+
+#toggle-password-signup-two:hover {
+  cursor: pointer;
+}
+
 /* signup form ends */
 
 /* cart page begins */
@@ -489,8 +521,18 @@ h4 {
   width: 40%;
 }
 
-.login-section .input.login-input {
+.login-section .input.login-input-password {
   padding: 0 0;
   margin: 0 0;
+  position: relative;
+}
+#toggle-password-login {
+  position: absolute;
+  top: 1.2rem;
+  right: 4.4rem;
+}
+
+#toggle-password-login:hover {
+  cursor: pointer;
 }
 /* login paged ends */
