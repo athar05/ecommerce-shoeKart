@@ -293,6 +293,7 @@ h4 {
 
 .button.button-icon.wishlist-button {
   background-color: var(--secondary);
+  border: none;
 }
 
 /* wishlist section ends  */
