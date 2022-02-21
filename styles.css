@@ -13,13 +13,8 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--bg-white);
 
-
-  font: inherit;
-  font-family: "Arimo", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
 }
 
 .page-container {
@@ -265,8 +260,6 @@ h4 {
 /* footer section end */
 
 
-}
-
 /* signup form begins */
 .page-container.signup {
   display: grid;
@@ -327,6 +320,7 @@ h4 {
     "header header header header"
     "body body body body"
     "footer footer footer footer";
+}
 
 .cart-container .header {
   grid-area: header;
@@ -407,3 +401,55 @@ h4 {
 }
 
 /* cart page ends */
+
+/* login page begins */
+.page-container.login {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px 70vh 200px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header header"
+    "body body body body"
+    "footer footer footer footer";
+}
+.page-container.login .header {
+  grid-area: header;
+  width: 100%;
+}
+
+.page-container.login .body {
+  grid-area: body;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-container.login .login-section {
+  font: inherit;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  width: 30%;
+  border: 1px solid var(--primary);
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.page-container.login .footer {
+  grid-area: footer;
+  background-color: var(--footer-bg);
+  width: 100%;
+}
+
+.login-section .button.button-icon.login-button {
+  width: 40%;
+}
+
+.login-section .input.login-input {
+  padding: 0 0;
+  margin: 0 0;
+}
+/* login paged ends */
