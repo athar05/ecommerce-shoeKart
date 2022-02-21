@@ -13,7 +13,7 @@
 }
 
 body {
-  font: inherit;
+  background-color: var(--bg-white);
 }
 
 .page-container {
@@ -258,6 +258,59 @@ h4 {
 }
 /* footer section end */
 
+/* signup form begins */
+.page-container.signup {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px auto 200px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header header"
+    "body body body body"
+    "footer footer footer footer";
+}
+
+.page-container.signup .header {
+  grid-area: header;
+  width: 100%;
+}
+
+.page-container.signup .body {
+  grid-area: body;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-container.signup .signup-section {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  width: 30%;
+  border: 1px solid var(--primary);
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border: 1px solid var(--primary-color);
+}
+
+.page-container.signup .footer {
+  grid-area: footer;
+  background-color: var(--footer-bg);
+  width: 100%;
+}
+
+.signup-section .button.button-icon.signup-button {
+  width: 40%;
+}
+
+.signup-section .input.signup-input {
+  padding: 0 0;
+  margin: 0 0;
+}
+/* signup form ends */
+
 /* cart page begins */
 .container {
   display: grid;
@@ -265,7 +318,12 @@ h4 {
   grid-template-rows: 85px 65vh 200px;
   gap: 0px 0px;
   grid-auto-flow: row;
+  grid-template-areas:
+    "header header header header"
+    "body body body body"
+    "footer footer footer footer";
 }
+
 .cart-container .header {
   grid-area: header;
   width: 100vw;
